@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('images/background-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 3s ease-in-out;
+
+}
+
+.page-wrapper{
+  width: 80%;
+  padding: 140px 16px 16px 16px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center top;
+
+}
+
+@font-face {
+    font-family: 'Dancing-Script';
+    src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair-Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EB-Garamond';
+    src: url('fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts/Cormorant-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+
+h1{
+    font-size: 55px;
+    font-family: "Dancing-Script", cursive;
+    margin:0;
+    line-height: 90%;
+    font-weight: normal; 
+
+}
+
+h2{
+    font-size: 20px;
+    font-family: "Playfair-Display", serif;
+    font-weight: normal; 
+    letter-spacing: 4.5px;
+}
+
+h3{
+    font-size: 16px;
+    font-family: "EB-Garamond", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 12px;
+    font-family: "Cormorant", serif;
+    font-weight: normal;
+}
+
+a, abbr{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.summary{
+    margin: 0 auto;
+    width: 370px;
+}
+
+.preamble{
+    margin: 80px auto;
+    max-width: 500px;
+}
+
+.main.supporting {
+    position: relative; /* Ensure the container is positioned relative to the background image */
+    padding: 80px; /* Add padding to ensure text doesn't touch the edges */
+    background-image: url('images/frame-all.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+}
+
+.main.supporting > div {
+    position: relative; /* Ensure child divs are positioned relative to the container */
+    z-index: 1; /* Ensure the text appears above the background image */
+}
+
+/* Adjustments for specific child divs */
+.main.supporting .explanation {
+    margin-top: 140px;
+    text-align: left;
+}
+
+.main.supporting .participation {
+    text-align: right;
+}
+
+.main.supporting .benefits {
+    text-align: left;
+}
+
+.main.supporting .requirements {
+    text-align: right;
+}
+
+.requirements [role="contentinfo"] {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.design-selection{
+    background-image: url(images/flower-frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 140px 100px;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    font-size: 8px;
+    text-align: left;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-selection ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.design-selection li{
+    margin-bottom: 6px;
+
+}
+
+.design-selection h3{
+    font-size: 8px;
+    text-align: left;
+}
+
+.archives{
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.zen-resources{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 40px;
+    gap:20px;
+    text-align: left;
+}
+
+.zen-resources ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zen-resources a, .zen-resources abbr{
+    font-weight: normal;
+}
+
+.zen-resources h3{
+    margin:0;
+}
+
+
+
+.design-selection {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+.design-archives{
+    order: 2;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.design-archives nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.design-archives nav ul li{
+    text-transform: uppercase;
+}
+
+a {
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #d18514;
+}
+
+@media screen and (min-width: 700px){
+   .page-wrapper{
+     padding: 170px 16px 16px 16px;
+   }
+   h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 20px;
+
+}
+
+p{
+    font-size: 16px;
+    
+}
+.main.supporting .explanation {
+    margin-top: 202px;
+}
+
+}
+
+
+@media screen and (min-width: 1020px){
+    .page-wrapper{
+      padding: 250px 16px 16px 16px;
+    }
+    .main.supporting{
+        padding: 150px;
+    }
+ }
+
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
